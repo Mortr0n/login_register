@@ -39,15 +39,17 @@
                         <button type="submit" class="btn btn-primary mt-3" value="Register">Submit</button>
                     </form>
                     
+                    
                 </div>
                 <div class="col-3">
                     <h1 class="text-center">Login</h1>
                     <form action="/login" method="POST">
                         {% csrf_token %}
+                        
                         <label for="email" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="email">
+                        <input type="text" class="form-control" name="email">
                         <label for="password" class="form-label">Password</label>
-                        <input type="text" class="form-control" id="password">
+                        <input type="text" class="form-control" name="password">
                         <button type="submit" class="btn btn-primary mt-3" value="Login">Login</button>
                     </form>
                 </div>
